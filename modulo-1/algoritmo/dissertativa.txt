@@ -1,0 +1,18 @@
+Solução algorítmica para calcular a multiplicação de 9 por um valor n,
+utilizando o truque da tabuada do 9, seguindo uma estrutura clássica de entrada, processamento e saída. 
+O truque baseia-se na observação de que o resultado pode ser obtido concatenando dois dígitos: 
+o primeiro é (n - 1), que representa a dezena, e o segundo é (10 - n), que representa a unidade. 
+Matematicamente, isso equivale a (n - 1) * 10 + (10 - n). 
+Essa abordagem é válida para valores de n entre 1 e 9 (ou até 10, produzindo resultados corretos como 90),
+mas para valores maiores, o truque não se aplica diretamente sem ajustes, 
+pois pode gerar dígitos negativos ou multi-dígitos.
+Entrada: O algoritmo inicia lendo o valor de n fornecido pelo usuário. 
+Esse valor deve ser um número inteiro positivo, idealmente entre 1 e 10, para alinhar com o truque tradicional.
+Processamento: Em seguida, realiza as operações aritméticas necessárias. Primeiro, 
+calcula o dígito da dezena subtraindo 1 de n (dezena = n - 1). Depois, 
+calcula o dígito da unidade subtraindo n de 10 (unidade = 10 - n). Por fim, 
+combina esses dígitos para formar o número final, 
+multiplicando a dezena por 10 e somando a unidade (resultado = dezena * 10 + unidade).
+Saída: O algoritmo finaliza imprimindo o valor calculado do resultado, que representa 9 multiplicado por n.
+Essa abordagem é simples, eficiente e não requer loops ou condições complexas, 
+tornando-a ideal para ilustrar conceitos básicos de algoritmos.
